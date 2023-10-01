@@ -1,7 +1,7 @@
 let randomNumber1 = Math.floor(Math.random() * 6) + 1; // Random no. Between 1 and 6
 
 let randomDiceImg1 = "dice" + randomNumber1 + ".png"; // use this to change the source of the image from say dice1.png to dice5.png
-let randomImgSrc  = "/media/images/" + randomDiceImg1;
+let randomImgSrc  = "media/images/" + randomDiceImg1;
 
 //Then we need to change the attribute, by selecting it first via querySelectorAll
 
@@ -10,7 +10,7 @@ img1.setAttribute("src", randomImgSrc) // First parameter is the attribute we wa
 
 // Getting and setting the second:
 let randomNumber2 = Math.floor(Math.random() * 6) + 1; // Random no. Between 1 and 6
-let randomimgsrc2 = "/media/images/dice" + randomNumber2 + ".png";
+let randomimgsrc2 = "media/images/dice" + randomNumber2 + ".png";
 let img2 = document.querySelectorAll("img")[1].setAttribute("src", randomimgsrc2) // Get the second image and set
 
 // Comparison logic 
